@@ -297,7 +297,7 @@ training_args = TrainingArguments(
     report_to = "none",
     dataloader_pin_memory = False,
     logging_strategy =  "steps",
-    logging_steps = 100
+    logging_steps = 10000
 )
 model.train()
 model.to(device)
